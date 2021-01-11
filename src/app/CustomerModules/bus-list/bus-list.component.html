@@ -1,0 +1,30 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Bus Number</th>
+            <th scope="col">Agency Name</th>
+            <th scope="col">From</th>
+            <th scope="col">To</th>
+            <th scope="col">Departure Date</th>
+            <th scope="col">Departure Time</th>
+            <th scope="col">Arrival Date</th>
+            <th scope="col">Arrival Time</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let bus of buslist">
+            <td scope="row">{{bus.BusNumber}}</td>
+            <td scope="row">{{bus.AgencyNAme}}</td>
+            <td scope="row">{{bus.Source}}</td>
+            <td scope="row">{{bus.Destination}}</td>
+            <td scope="row">{{bus.BoardingDate}}</td>
+            <td scope="row">{{bus.DepartureTime}}</td>
+            <td scope="row">{{bus.DroppingDate}}</td>
+            <td scope="row">{{bus.ArrivalTime}}</td>
+            <button class="btn btn-primary">Book</button>
+
+        </tr>
+
+    </tbody>
+</table>

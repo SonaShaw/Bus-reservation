@@ -1,0 +1,16 @@
+<div class="container main">
+    <form>
+        <h2 class="text-center">Book Buses</h2>
+        <label for="bstop" class="label">From</label>
+        <input type="text" id="bstop" class="ip" name="bstop" [(ngModel)]='bus.from'><br>
+        <label for="dstop" class="label">To</label>
+        <input type="text" id="dstop" name="dstop" [(ngModel)]='bus.to'><br>
+        <label for="tdate" class="label"> Travel Date</label>
+        <input type="date" id="tdate" name="tdate" [(ngModel)]='bus.traveldate'><br>
+        <div class="center">
+            <button class="btn btn-primary " [routerLink]="['/buslist/',bus.from,bus.to,bus.traveldate]">Search</button>
+        </div>
+
+    </form>
+
+</div>
